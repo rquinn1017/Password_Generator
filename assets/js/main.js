@@ -14,7 +14,7 @@ const randomFunctions = {
     numbers: getRandomNumbers,
     symbols: getRandomSymbols
 };
- //Generate Event Listen
+//Generate Event Listen
 generateElement.addEventListener('click', () => {
 
     const pwlength = +lengthElement.value;
@@ -29,11 +29,11 @@ generateElement.addEventListener('click', () => {
 
 
 // Copy password to clipboard
-clipboardElement.addEventListener('click', () =>{
+clipboardElement.addEventListener('click', () => {
     const textarea = document.createElement('textarea');
     const password = resultElement.innerText;
 
-    if(!password){
+    if (!password) {
         return;
     }
     textarea.value = password;
@@ -46,29 +46,29 @@ clipboardElement.addEventListener('click', () =>{
 })
 
 //Generate PW Function
-function generatePassword(lower, upper, numbers, symbols, pwLength){
+function generatePassword(lower, upper, numbers, symbols, pwLength) {
 
     let generatedPassword = '';
     const typesCount = lower + upper + numbers + symbols;
 
     console.log('typesCount: ', typesCount);
 
-    const typesArr = [{lower}, {upper}, {numbers}, {symbols}].filter(
+    const typesArr = [{ lower }, { upper }, { numbers }, { symbols }].filter(
         item => Object.values(item)[0]
     );
 
     // console.log('typesArr: ', typesArr);
 
-    if(typesCount === 0) {
+    if (typesCount === 0) {
         return '',
-        alert("You must select at least one password criteria");
+            alert("You must select at least one password criteria");
     }
 
-    for(let i = 0; i < pwLength; i += typesCount){
+    for (let i = 0; i < pwLength; i += typesCount) {
         typesArr.forEach(type => {
-            const funcName =Object.keys(type)[0];
+            const funcName = Object.keys(type)[0];
             // console.log('funcName: ', funcName);
-            
+
             generatedPassword += randomFunctions[funcName]();
         });
     }

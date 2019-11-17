@@ -1,19 +1,28 @@
+/* html, body, .container, .result-container{
+    height:100%;
+ } */
+
 body {
     background-image: url("https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260");
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;;
   }
   
 
   .container {
         background-color: #ffffff;
-        margin-top: 40px;
+        margin-top: 60px;
         max-width: 750px;
         padding: 30px;
         
+  }
+
+  #clipboard{
+      float: right;
   }
 
   .footer {
@@ -43,10 +52,6 @@ body {
         width: 40px;
     }
 
-    .result-container #result {
-        word-wrap: break-word;
-      max-width: calc(100% - 40px);
-  }
     
     .btn {
         border: none;
@@ -75,7 +80,7 @@ color: #ffffff
         font-size: 18px;
         letter-spacing: 1px;
         padding: 12px 10px;
-        height: 50px;
+        height: 100px;
         width: 100%;
         background-color:#f1f1fc;
     }
@@ -83,9 +88,11 @@ color: #ffffff
     .result-container #result {
           word-wrap: break-word;
         max-width: calc(100% - 40px);
-    }
+            }
+
+
     
-    .slidecontainer {
+       .slidecontainer {
         width: 100%;
       }
       

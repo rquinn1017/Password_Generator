@@ -26,18 +26,20 @@
 
   <div class="container">
     <h2>Password Generator</h2>
-    <div class="result-container">
+       <div class="result-container">
       <span id="result"></span>
-      <button class="btn" id="clipboard">
-        <i class="far fa-clipboard"></i>
-      </button>
     </div>
-<br>
+      <br>
+       <!-- <textarea class="form-control" rows="3"></textarea> -->
+      <button class="btn" id="clipboard">
+      Copy to Password to Clipboard
+      </button>
+ <br>
     <h4>Select Password Length:</h4>
 
 <div class="slidecontainer">
   <input type="range" min="8" max="128" value="50" class="slider" id="pwLength">
-  <p>Value: <span id="length"></span></p>
+  <p>Password Length: <span id="length"></span></p>
 </div>
  
     <div class="settings">
