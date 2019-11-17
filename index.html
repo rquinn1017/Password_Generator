@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Awesome Password Generator</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Start Nav -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <span class="navbar-brand mb-1 h1">Awesome Password Generator</span>
+  </nav>
+  <!-- End Nav -->
+
+  <!-- Start Contact Form -->
+
+  <div class="container">
+    <h2>Password Generator</h2>
+    <div class="result-container">
+      <span id="result"></span>
+      <button class="btn" id="clipboard">
+        <i class="far fa-clipboard"></i>
+      </button>
+    </div>
+<br>
+    <h4>Select Password Length:</h4>
+
+<div class="slidecontainer">
+  <input type="range" min="8" max="128" value="50" class="slider" id="pwLength">
+  <p>Value: <span id="length"></span></p>
+</div>
+ 
+    <div class="settings">
+      <!-- <div class="setting">
+        <label>Password length</label>
+        <input type="number" id="length" min='8' max='128' value='20' />
+      </div> --> 
+
+      <h4>Select Password Criteria:</h4>
+      <div class="setting">
+        <label>Include uppercase letters</label>
+        <input type="checkbox" id="uppercase" checked />
+      </div>
+      <div class="setting">
+        <label>Include lowercase letters</label>
+        <input type="checkbox" id="lowercase" checked />
+      </div>
+      <div class="setting">
+        <label>Include numbers</label>
+        <input type="checkbox" id="numbers" checked />
+      </div>
+      <div class="setting">
+        <label>Include symbols</label>
+        <input type="checkbox" id="symbols" checked />
+      </div>
+    </div>
+    <button class="btn btn-large" id="generate">
+      Generate password
+    </button>
+  </div>
+
+  <!-- Start Footer -->
+  <footer>
+    <div>
+      Copyright &copy;
+    </div>
+  </footer>
+  <!-- End Footer    -->
+
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <!-- Bootstrap JavaScript CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
