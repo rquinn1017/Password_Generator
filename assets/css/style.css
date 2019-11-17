@@ -1,6 +1,6 @@
-/* html, body, .container, .result-container{
-    height:100%;
- } */
+ html {
+    overflow: scroll;
+ } 
 
 body {
     background-image: url("https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260");
@@ -15,9 +15,9 @@ body {
 
   .container {
         background-color: #ffffff;
-        margin-top: 60px;
+        margin-top: 50px;
         max-width: 750px;
-        padding: 30px;
+        padding: 15px;
         
   }
 

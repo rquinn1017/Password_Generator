@@ -34,7 +34,7 @@ generateElement.addEventListener('click', () => {
 // Copy password to clipboard
 clipboardElement.addEventListener('click', () => {
     const textarea = document.createElement('textarea');
-    const password = resultElement.innerText;
+    const password = resultElement.value;
 
     if (!password) {
         return;
