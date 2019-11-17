@@ -1,3 +1,6 @@
+alert("Welcome to the sweetest password generator ever. To generate your awesome new password, use the scroll bar to select the desired password length, select at least one of the password criteria, and click Generate Password.")
+
+
 const resultElement = document.getElementById('result');
 const lengthElement = document.getElementById('pwLength');
 const uppercaseElement = document.getElementById('uppercase');
