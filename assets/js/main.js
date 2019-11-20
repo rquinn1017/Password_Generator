@@ -54,7 +54,7 @@ function generatePassword(lower, upper, numbers, symbols, pwLength) {
     let generatedPassword = '';
     const typesCount = lower + upper + numbers + symbols;
 
-    console.log('typesCount: ', typesCount);
+    // console.log('typesCount: ', typesCount);
 
     const typesArr = [{ lower }, { upper }, { numbers }, { symbols }].filter(
         item => Object.values(item)[0]
@@ -77,7 +77,7 @@ function generatePassword(lower, upper, numbers, symbols, pwLength) {
     }
     const finalPassword = generatedPassword;
     return finalPassword;
-    console.log(generatedPassword);
+    // console.log(generatedPassword);
 }
 
 //Generate Functions//
@@ -102,7 +102,7 @@ function getRandomSymbols() {
 
 // console.log(Math.floor(Math.random() * 26) + 97);
 
-console.log(getRandomSymbols());
+// console.log(getRandomSymbols());
 
 var slider = document.getElementById("pwLength");
 var output = document.getElementById("length");
