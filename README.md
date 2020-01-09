@@ -6,7 +6,6 @@ When the page loads, you will instructed on how to use the page with an alert. A
 
 
 Here is an example of what the webpage looks like:
-![password generator demo](./Assets/demo.png)
+[Password Generator](./Assets/demo.png)
 
-Here is a link to the published url:
-https://rquinn1017.github.io/Password_Generator/
+Deployed Website: https://rquinn1017.github.io/Password_Generator/
